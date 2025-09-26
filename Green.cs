@@ -13,7 +13,7 @@ namespace Lab2
             // code here
             for ( int i = 2;i<=n;i+=2)
             {
-                answer+=double(i)/(i+1)
+                answer += double(i) / (i + 1);
             }
             // end
 
@@ -25,7 +25,7 @@ namespace Lab2
 
             // code here
             answer = 1;
-            int step = 1;
+            double step = 1;
             for (int i = 1;i<=n;i++)
             {
                 answer += (1 / x) * step;
@@ -41,7 +41,7 @@ namespace Lab2
 
             // code here
             answer = 1;
-            long fact = 1.0;
+            long fact = 1;
             for (int i  = 1;i<=n;i++1)
             {
                 answer += (i * fact);
@@ -129,9 +129,9 @@ namespace Lab2
             for(int x = a;x<=b+0.000001;x+=h)
             {
                 int i = 0;//Указатель степни с которой начинать
-                int p = -1;//Степень,определяющая знак
-                int num = 1;//x в степени 2i
-                int Chislo_num_i = 1;
+                double p = -1;//Степень,определяющая знак
+                double num = 1;//x в степени 2i
+                double Chislo_num_i = 1;
                 while(Math.Abs(Chislo_num_i)>=E)
                 {
                     Chislo_num_i = -p * x * num / (2 * i + 1);
